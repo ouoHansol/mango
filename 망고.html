@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Off Your Wealth!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .container {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        .rainbow-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            animation: move 3s linear infinite, rainbow 5s linear infinite;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #ff4500;
+            margin: 1rem 0;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .cat-image {
+            width: 300px;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        /* Text moving left to right */
+        @keyframes move {
+            0% { transform: translateX(-100%); }
+            50% { transform: translateX(0); }
+            100% { transform: translateX(100%); }
+        }
+        /* Rainbow color effect */
+        @keyframes rainbow {
+            0% { color: #ff0000; }
+            17% { color: #ff8000; }
+            33% { color: #ffff00; }
+            50% { color: #00ff00; }
+            67% { color: #0000ff; }
+            83% { color: #4b0082; }
+            100% { color: #8f00ff; }
+        }
+    </style>
+</head>
+<body>
+    <div class="rainbow-text">망고 후원계좌 : 12345678 신한은행 쏘</div>
+    <img src="mango.jpg" alt="Mango Cat with Hat" class="cat-image">
+    <div class="container">
+        <h1>용맹한 해적 망고에게 돈을 주세요!</h1>
+        <p>1억만 줘라!</p>
+    </div>
+    <div class="rainbow-text">망고 후원계좌 : 12345678 신한은행 쏘</div>
+</body>
+</html>
